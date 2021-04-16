@@ -1,0 +1,24 @@
+Package: nflverse
+Title: Easily Install and Load the 'nflverse'
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Sebastian",
+           family = "Carl",
+           role = c("aut", "cre"),
+           email = "mrcaseb@gmail.com")
+Description: The 'nflverse' is a set of packages dedicated to data of the
+    National Football League.. This package is designed to make it easy to
+    install and load multiple 'nflverse' packages in a single step. Learn
+    more about the 'nflverse' at <https://nflverse.org>.
+License: MIT + file LICENSE
+Imports: 
+    cli,
+    crayon,
+    nfl4th,
+    nflfastR,
+    nflseedR,
+    rstudioapi
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
