@@ -4,7 +4,7 @@
 \name{nflverse-package}
 \alias{nflverse}
 \alias{nflverse-package}
-\title{nflverse: Easily Install and Load the 'nflverse'}
+\title{The 'nflverse' - A set of packages dedicated to data of the National Football League.}
 \description{
 \if{html}{\figure{logo.png}{options: align='right' alt='logo' width='120'}}
 
@@ -16,6 +16,7 @@ The 'nflverse' is a set of packages dedicated to data of the
 \seealso{
 Useful links:
 \itemize{
+  \item \url{https://nflverse.github.io/nflverse}
   \item \url{https://github.com/nflverse/nflverse}
   \item Report bugs at \url{https://github.com/nflverse/nflverse/issues}
 }
@@ -36,4 +37,3 @@ Other contributors:
 }
 
 }
-\keyword{internal}
