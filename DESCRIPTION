@@ -26,6 +26,7 @@ BugReports: https://github.com/nflverse/nflverse/issues
 Imports: 
     cli,
     crayon,
+    magrittr,
     nfl4th (>= 1.0.0),
     nflfastR (>= 4.1.0),
     nflseedR (>= 1.0.2),

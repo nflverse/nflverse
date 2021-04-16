@@ -4,12 +4,36 @@
 \name{nflverse-package}
 \alias{nflverse}
 \alias{nflverse-package}
-\title{nflverse: What the Package Does (One Line, Title Case)}
+\title{nflverse: Easily Install and Load the 'nflverse'}
 \description{
-What the package does (one paragraph).
+\if{html}{\figure{logo.png}{options: align='right' alt='logo' width='120'}}
+
+The 'nflverse' is a set of packages dedicated to data of the
+    National Football League. This package is designed to make it easy to
+    install and load multiple 'nflverse' packages in a single step. Learn
+    more about the 'nflverse' at <https://nflverse.org>.
+}
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/nflverse/nflverse}
+  \item Report bugs at \url{https://github.com/nflverse/nflverse/issues}
+}
+
 }
 \author{
-\strong{Maintainer}: First Last \email{first.last@example.com} (\href{https://orcid.org/YOUR-ORCID-ID}{ORCID})
+\strong{Maintainer}: Sebastian Carl \email{mrcaseb@gmail.com}
+
+Authors:
+\itemize{
+  \item Ben Baldwin \email{bbaldwin206@gmail.com}
+  \item Lee Sharpe
+}
+
+Other contributors:
+\itemize{
+  \item Tan Ho [contributor]
+}
 
 }
 \keyword{internal}
