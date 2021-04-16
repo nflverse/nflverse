@@ -2,10 +2,20 @@ Package: nflverse
 Title: Easily Install and Load the 'nflverse'
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "Sebastian",
+    c(person(given = "Sebastian",
            family = "Carl",
            role = c("aut", "cre"),
-           email = "mrcaseb@gmail.com")
+           email = "mrcaseb@gmail.com"),
+      person(given = "Ben",
+             family = "Baldwin",
+             role = "aut",
+             email = "bbaldwin206@gmail.com"),
+      person(given = "Lee",
+             family = "Sharpe",
+             role = "aut"),
+      person(given = "Tan",
+             family = "Ho",
+             role = "ctb"))
 Description: The 'nflverse' is a set of packages dedicated to data of the
     National Football League. This package is designed to make it easy to
     install and load multiple 'nflverse' packages in a single step. Learn
