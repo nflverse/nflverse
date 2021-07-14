@@ -18,6 +18,7 @@ knitr::opts_chunk$set(
 
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/nflverse/nflverse/workflows/R-CMD-check/badge.svg)](https://github.com/nflverse/nflverse/actions)
+[![Support Server](https://img.shields.io/discord/591914197219016707.svg?color=7289da&label=Support&logo=discord&style=flat-square)](https://discord.com/invite/5Er2FBnnQa)
 <!-- badges: end -->
 
 ## Overview
