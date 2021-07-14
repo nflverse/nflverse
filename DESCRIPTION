@@ -21,7 +21,7 @@ Description: The 'nflverse' is a set of packages dedicated to data of the
     install and load multiple 'nflverse' packages in a single step. Learn
     more about the 'nflverse' at <https://nflverse.org>.
 License: MIT + file LICENSE
-URL: https://nflverse.github.io/nflverse,
+URL: https://nflverse.github.io/nflverse/,
     https://github.com/nflverse/nflverse
 BugReports: https://github.com/nflverse/nflverse/issues
 Imports: 

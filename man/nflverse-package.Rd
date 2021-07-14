@@ -16,7 +16,7 @@ The 'nflverse' is a set of packages dedicated to data of the
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://nflverse.github.io/nflverse}
+  \item \url{https://nflverse.github.io/nflverse/}
   \item \url{https://github.com/nflverse/nflverse}
   \item Report bugs at \url{https://github.com/nflverse/nflverse/issues}
 }

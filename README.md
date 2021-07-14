@@ -28,7 +28,7 @@ remotes::install_github("nflverse/nflverse")
 
 `library(nflverse)` will load the core nflverse packages:
 
--   [nflfastR](https://ggplot2.tidyverse.org), for play-by-play data
-    back to 1999.
--   [nflseedR](https://dplyr.tidyverse.org), for season simulations.
--   [nfl4th](https://tidyr.tidyverse.org), for 4th down analysis.
+-   [nflfastR](https://www.nflfastr.com/), for play-by-play data back
+    to 1999.
+-   [nflseedR](https://nflseedr.com/), for season simulations.
+-   [nfl4th](https://www.nfl4th.com/), for 4th down analysis.
