@@ -40,6 +40,8 @@ navbar:
           href: https://www.nfl4th.com
         - text: nflreadr
           href: https://nflreadr.nflverse.com/
+        - text: nflplotR
+          href: https://nflplotr.nflverse.com/
         - text: "Open Source Football"
           href: https://www.opensourcefootball.com
         - text: "nflverse Data"
