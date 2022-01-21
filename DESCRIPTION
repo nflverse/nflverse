@@ -1,21 +1,12 @@
 Package: nflverse
 Title: Easily Install and Load the 'nflverse'
 Version: 0.0.0.9000
-Authors@R: 
-    c(person(given = "Sebastian",
-             family = "Carl",
-             role = c("aut", "cre"),
-             email = "mrcaseb@gmail.com"),
-      person(given = "Ben",
-             family = "Baldwin",
-             role = "aut",
-             email = "bbaldwin206@gmail.com"),
-      person(given = "Lee",
-             family = "Sharpe",
-             role = "aut"),
-      person(given = "Tan",
-             family = "Ho",
-             role = "ctb"))
+Authors@R: c(
+    person("Sebastian", "Carl", , "mrcaseb@gmail.com", role = c("aut", "cre")),
+    person("Ben", "Baldwin", , "bbaldwin206@gmail.com", role = "aut"),
+    person("Lee", "Sharpe", role = "aut"),
+    person("Tan", "Ho", role = "aut")
+  )
 Description: The 'nflverse' is a set of packages dedicated to data of the
     National Football League. This package is designed to make it easy to
     install and load multiple 'nflverse' packages in a single step. Learn
@@ -25,17 +16,20 @@ URL: https://nflverse.github.io/nflverse/,
     https://github.com/nflverse/nflverse
 BugReports: https://github.com/nflverse/nflverse/issues
 Imports: 
-    cli,
-    crayon,
-    magrittr,
-    nfl4th (>= 1.0.0),
-    nflfastR (>= 4.1.0),
+    cli (>= 3.0.0),
+    crayon (>= 1.4.0),
+    magrittr (>= 2.0.0),
+    nfl4th (>= 1.0.1),
+    nflfastR (>= 4.3.0),
+    nflplotR (>= 1.0.0),
+    nflreadr (>= 1.1.2),
     nflseedR (>= 1.0.2),
-    rstudioapi
-Encoding: UTF-8
-LazyData: true
-Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.1.1
+    rlang,
+    rstudioapi (>= 0.13)
 Suggests: 
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2

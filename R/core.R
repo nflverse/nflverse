@@ -1,5 +1,7 @@
-core <- c( 
+core <- c(
 "nflfastR",
 "nflseedR",
-"nfl4th"
+"nfl4th",
+"nflreadr",
+"nflplotR"
 )
