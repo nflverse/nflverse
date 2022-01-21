@@ -8,12 +8,12 @@
 \description{
 \if{html}{\figure{logo.png}{options: align='right' alt='logo' width='120'}}
 
-The 'nflverse' is a set of packages dedicated to data of the National Football League. This package is designed to make it easy to install and load multiple 'nflverse' packages in a single step. Learn more about the 'nflverse' at <https://nflverse.org>.
+The 'nflverse' is a set of packages dedicated to data of the National Football League. This package is designed to make it easy to install and load multiple 'nflverse' packages in a single step. Learn more about the 'nflverse' at <https://nflverse.nflverse.com/>.
 }
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://nflverse.github.io/nflverse/}
+  \item \url{https://nflverse.nflverse.com/}
   \item \url{https://github.com/nflverse/nflverse}
   \item Report bugs at \url{https://github.com/nflverse/nflverse/issues}
 }
@@ -26,7 +26,7 @@ Authors:
 \itemize{
   \item Ben Baldwin \email{bbaldwin206@gmail.com}
   \item Lee Sharpe
-  \item Tan Ho
+  \item Tan Ho \email{tan@tanho.ca} (\href{https://orcid.org/0000-0001-8388-5155}{ORCID})
 }
 
 }

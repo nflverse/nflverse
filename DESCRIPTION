@@ -11,9 +11,9 @@ Authors@R: c(
 Description: The 'nflverse' is a set of packages dedicated to data of the
     National Football League. This package is designed to make it easy to
     install and load multiple 'nflverse' packages in a single step. Learn
-    more about the 'nflverse' at <https://www.nflverse.com>.
+    more about the 'nflverse' at <https://nflverse.nflverse.com/>.
 License: MIT + file LICENSE
-URL: https://nflverse.github.io/nflverse/,
+URL: https://nflverse.nflverse.com/,
     https://github.com/nflverse/nflverse
 BugReports: https://github.com/nflverse/nflverse/issues
 Imports: 

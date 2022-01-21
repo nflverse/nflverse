@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# nflverse <a href='https://www.nflverse.com'><img src='man/figures/logo.png' align="right" width="25%" min-width="120px" /></a>
+# nflverse <a href='https://nflverse.nflverse.com/'><img src='man/figures/logo.png' align="right" width="25%" min-width="120px" /></a>
 
 <!-- badges: start -->
 
