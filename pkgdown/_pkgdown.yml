@@ -1,1 +1,67 @@
 url: https://nflverse.github.io/nflverse
+
+authors:
+  Sebastian Carl:
+    href: https://twitter.com/mrcaseb
+  Ben Baldwin:
+    href: https://twitter.com/benbbaldwin
+  Lee Sharpe:
+    href: https://twitter.com/LeeSharpeNFL
+  Tan Ho:
+    href: https://twitter.com/_TanHo
+
+home:
+  title: nflverse • Data and Tools for NFL Analytics
+  description: >
+    A collection of data and R packages designed for NFL analytics!
+
+navbar:
+  type: dark
+  bg: dark
+  structure:
+    left:  [home, intro, reference, news, articles]
+    right: [discord, github, more]
+  components:
+    discord:
+      icon: "fab fa-discord fa-lg"
+      href: https://discord.com/invite/5Er2FBnnQa
+    reference:
+      text: "Functions"
+      href: reference/index.html
+    more:
+      text: "Packages & More"
+      menu:
+        - text: "nflverse Packages"
+        - text: nflfastR
+          href: https://www.nflfastr.com
+        - text: nflseedR
+          href: https://nflseedr.com
+        - text: nfl4th
+          href: https://www.nfl4th.com
+        - text: nflreadr
+          href: https://nflreadr.nflverse.com/
+        - text: "Open Source Football"
+          href: https://www.opensourcefootball.com
+        - text: "nflverse Data"
+        - text: nflverse GitHub
+          href: https://github.com/nflverse
+        - text: espnscrapeR Package
+          href: https://jthomasmock.github.io/espnscrapeR/
+        - text: ffverse
+        - text: "ffverse.com"
+          href: https://www.ffverse.com
+
+template:
+  bootstrap: 5
+  bootswatch: cosmo
+  # theme: arrow-light
+  bslib:
+    font_scale: 1.2
+    base_font: {google: "IBM Plex Sans"}
+    heading_font: {google: "Kanit"}
+    code_font: {google: "Fira Code"}
+  opengraph:
+    twitter:
+      creator: "@mrcaseb"
+      site: "@nflfastR"
+      card: summary_large_image
