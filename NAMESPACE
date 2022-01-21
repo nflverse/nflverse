@@ -2,4 +2,6 @@
 
 export("%>%")
 export(nflverse_packages)
+export(nflverse_sitrep)
+export(nflverse_update)
 importFrom(magrittr,"%>%")
