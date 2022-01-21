@@ -5,12 +5,13 @@ Authors@R: c(
     person("Sebastian", "Carl", , "mrcaseb@gmail.com", role = c("aut", "cre")),
     person("Ben", "Baldwin", , "bbaldwin206@gmail.com", role = "aut"),
     person("Lee", "Sharpe", role = "aut"),
-    person("Tan", "Ho", role = "aut")
+    person("Tan", "Ho", , "tan@tanho.ca", role = "aut",
+           comment = c(ORCID = "0000-0001-8388-5155"))
   )
 Description: The 'nflverse' is a set of packages dedicated to data of the
     National Football League. This package is designed to make it easy to
     install and load multiple 'nflverse' packages in a single step. Learn
-    more about the 'nflverse' at <https://nflverse.org>.
+    more about the 'nflverse' at <https://www.nflverse.com>.
 License: MIT + file LICENSE
 URL: https://nflverse.github.io/nflverse/,
     https://github.com/nflverse/nflverse
@@ -24,7 +25,7 @@ Imports:
     nflplotR (>= 1.0.0),
     nflreadr (>= 1.1.2),
     nflseedR (>= 1.0.2),
-    rlang,
+    rlang (>= 0.4.10),
     rstudioapi (>= 0.13)
 Suggests: 
     testthat (>= 3.0.0)
