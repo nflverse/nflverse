@@ -1,13 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://nflverse.github.io/nflverse/404.html</loc>
+  </url>
+  <url>
+    <loc>https://nflverse.github.io/nflverse/LICENSE-text.html</loc>
+  </url>
+  <url>
+    <loc>https://nflverse.github.io/nflverse/LICENSE.html</loc>
+  </url>
+  <url>
+    <loc>https://nflverse.github.io/nflverse/authors.html</loc>
+  </url>
+  <url>
     <loc>https://nflverse.github.io/nflverse/index.html</loc>
+  </url>
+  <url>
+    <loc>https://nflverse.github.io/nflverse/news/index.html</loc>
+  </url>
+  <url>
+    <loc>https://nflverse.github.io/nflverse/reference/index.html</loc>
   </url>
   <url>
     <loc>https://nflverse.github.io/nflverse/reference/nflverse-package.html</loc>
   </url>
   <url>
     <loc>https://nflverse.github.io/nflverse/reference/nflverse_packages.html</loc>
+  </url>
+  <url>
+    <loc>https://nflverse.github.io/nflverse/reference/nflverse_sitrep.html</loc>
+  </url>
+  <url>
+    <loc>https://nflverse.github.io/nflverse/reference/nflverse_update.html</loc>
   </url>
   <url>
     <loc>https://nflverse.github.io/nflverse/reference/pipe.html</loc>
