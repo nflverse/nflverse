@@ -19,7 +19,7 @@ install and load core packages from the nflverse in a single command.
 
 ## Installation
 
-The easiest way to get nflfastR is to install it from
+The easiest way to get nflverse is to install it from
 [GitHub](https://github.com/nflverse/nflverse/) with:
 
 ``` r

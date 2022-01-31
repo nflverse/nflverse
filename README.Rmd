@@ -27,7 +27,7 @@ The nflverse is a set of packages dedicated to data of the National Football Lea
 
 ## Installation
 
-The easiest way to get nflfastR is to install it from [GitHub](https://github.com/nflverse/nflverse/) with:
+The easiest way to get nflverse is to install it from [GitHub](https://github.com/nflverse/nflverse/) with:
 
 ```{r eval = FALSE}
 if (!require("remotes")) install.packages("remotes")
