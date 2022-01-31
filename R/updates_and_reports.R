@@ -37,6 +37,9 @@ nflverse_sitrep <- nflreadr::nflverse_sitrep
 #'   nflverse packages.
 #' @param repos the repositories to use to check for updates.
 #'   Defaults to `getOptions("repos")`.
+#' @param devel If `TRUE` the function will look for prebuilt development
+#'   versions on <https://nflverse.r-universe.dev/> so it is possible to install
+#'   development versions without GitHub.
 #' @returns Returns `NULL` invisibly. Called for side effects.
 #' @export
 #' @examples
@@ -44,8 +47,15 @@ nflverse_sitrep <- nflreadr::nflverse_sitrep
 #' try(
 #' nflverse_update()
 #' )
+#' try(
+#' nflverse_update(devel = TRUE)
+#' )
 #'}
-nflverse_update <- function(recursive = FALSE, repos = getOption("repos")){
+nflverse_update <- function(recursive = FALSE,
+                            repos = getOption("repos"),
+                            devel = FALSE){
+  devel_repo <- "https://nflverse.r-universe.dev/"
+  if(isTRUE(devel)) repos["devel"] <- devel_repo
   available <- utils::available.packages(repos = repos)
   packages <- nflverse_packages(include_self = FALSE)
 
@@ -96,7 +106,11 @@ nflverse_update <- function(recursive = FALSE, repos = getOption("repos")){
                   )
   cli::cli_alert_info("Start a clean R session then run:")
   pkg_str <- paste0(deparse(behind$package), collapse = "\n")
-  cli::cli_text("{.code install.packages({pkg_str})}")
+  if(isTRUE(devel)){
+    cli::cli_text("{.code install.packages({pkg_str}, repos = {devel_repo})}")
+  } else {
+    cli::cli_text("{.code install.packages({pkg_str})}")
+  }
 
   invisible()
 }
