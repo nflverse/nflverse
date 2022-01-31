@@ -20,10 +20,13 @@ nflverse_packages <- function(include_self = FALSE) {
 
 #' @inherit nflreadr::nflverse_sitrep
 #' @export
+#' @returns Returns `NULL` invisibly. Called for side effects.
 #' @examples
+#' \donttest{
 #' try(
 #' nflverse_sitrep()
 #' )
+#' }
 nflverse_sitrep <- nflreadr::nflverse_sitrep
 
 #' Update nflverse Packages
@@ -32,13 +35,16 @@ nflverse_sitrep <- nflreadr::nflverse_sitrep
 #'
 #' @param recursive If `TRUE`, will also list all strong dependencies of
 #'   nflverse packages.
-#' @param repos the repositories to use to check for updates. Defaults to `getOptions("repos")`.
-#' @returns Returns `NULL` invisible. Called for side effects.
+#' @param repos the repositories to use to check for updates.
+#'   Defaults to `getOptions("repos")`.
+#' @returns Returns `NULL` invisibly. Called for side effects.
 #' @export
 #' @examples
+#' \donttest{
 #' try(
 #' nflverse_update()
 #' )
+#'}
 nflverse_update <- function(recursive = FALSE, repos = getOption("repos")){
   available <- utils::available.packages(repos = repos)
   packages <- nflverse_packages(include_self = FALSE)
@@ -82,7 +88,12 @@ nflverse_update <- function(recursive = FALSE, repos = getOption("repos")){
   cli::cli_alert_info(
     "The following {cli::qty(nrow(behind))}package{?s} {?is/are} out of date:"
   )
-  cli::cat_bullet(format(behind$package), " (", format(behind$local), " -> ", format(behind$cran), ")")
+  cli::cat_bullet(format(behind$package),
+                  " (",
+                  format(behind$local),
+                  " -> ",
+                  format(behind$cran), ")"
+                  )
   cli::cli_alert_info("Start a clean R session then run:")
   pkg_str <- paste0(deparse(behind$package), collapse = "\n")
   cli::cli_text("{.code install.packages({pkg_str})}")

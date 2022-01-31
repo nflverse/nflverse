@@ -13,13 +13,15 @@ nflverse packages.}
 \item{repos}{the repositories to use to check for updates. Defaults to \code{getOptions("repos")}.}
 }
 \value{
-Returns \code{NULL} invisible. Called for side effects.
+Returns \code{NULL} invisibly. Called for side effects.
 }
 \description{
 Check all nflverse packages for available cran updates.
 }
 \examples{
+\donttest{
 try(
 nflverse_update()
 )
+}
 }
