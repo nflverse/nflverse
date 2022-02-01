@@ -1,6 +1,6 @@
 Package: nflverse
 Title: Easily Install and Load the 'nflverse'
-Version: 0.0.0.9000
+Version: 1.0.0
 Authors@R: c(
     person("Sebastian", "Carl", , "mrcaseb@gmail.com", role = c("aut", "cre")),
     person("Ben", "Baldwin", , "bbaldwin206@gmail.com", role = "aut"),
@@ -13,8 +13,7 @@ Description: The 'nflverse' is a set of packages dedicated to data of the
     install and load multiple 'nflverse' packages in a single step. Learn
     more about the 'nflverse' at <https://nflverse.nflverse.com/>.
 License: MIT + file LICENSE
-URL: https://nflverse.nflverse.com/,
-    https://github.com/nflverse/nflverse
+URL: https://nflverse.nflverse.com/, https://github.com/nflverse/nflverse
 BugReports: https://github.com/nflverse/nflverse/issues
 Imports: 
     cli (>= 3.0.0),
@@ -31,6 +30,5 @@ Suggests:
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
 Encoding: UTF-8
-LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.2

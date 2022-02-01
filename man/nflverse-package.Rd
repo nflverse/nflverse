@@ -4,7 +4,8 @@
 \name{nflverse-package}
 \alias{nflverse}
 \alias{nflverse-package}
-\title{The 'nflverse' - A set of packages dedicated to data of the National Football League.}
+\title{The 'nflverse' - A set of packages dedicated to data of the
+National Football League.}
 \description{
 \if{html}{\figure{logo.png}{options: align='right' alt='logo' width='120'}}
 

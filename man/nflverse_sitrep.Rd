@@ -5,7 +5,7 @@
 \title{Get a Situation Report on System, nflverse/ffverse Package Versions and Dependencies}
 \usage{
 nflverse_sitrep(
-  pkg = c("nflreadr", "nflfastR", "nflseedR", "nfl4th", "nflplotR"),
+  pkg = c("nflreadr", "nflfastR", "nflseedR", "nfl4th", "nflplotR", "nflverse"),
   recursive = TRUE
 )
 }
@@ -22,6 +22,9 @@ Character string \code{"all"} is shorthand for that vector, character string
 \code{"most"} for the same vector without \code{"Enhances"}, character string \code{"strong"}
 (default) for the first three elements of that vector.}
 }
+\value{
+Returns \code{NULL} invisibly. Called for side effects.
+}
 \description{
 This function gives a quick overview of the versions of R and the operating
 system as well as the versions of nflverse/ffverse packages and their dependencies.
@@ -29,7 +32,9 @@ It's primarily designed to help you get a quick idea of what's going on when
 you're helping someone else debug a problem.
 }
 \examples{
+\donttest{
 try(
 nflverse_sitrep()
 )
+}
 }

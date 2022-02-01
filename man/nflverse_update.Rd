@@ -4,22 +4,32 @@
 \alias{nflverse_update}
 \title{Update nflverse Packages}
 \usage{
-nflverse_update(recursive = FALSE, repos = getOption("repos"))
+nflverse_update(recursive = FALSE, repos = getOption("repos"), devel = FALSE)
 }
 \arguments{
 \item{recursive}{If \code{TRUE}, will also list all strong dependencies of
 nflverse packages.}
 
-\item{repos}{the repositories to use to check for updates. Defaults to \code{getOptions("repos")}.}
+\item{repos}{the repositories to use to check for updates.
+Defaults to \code{getOptions("repos")}.}
+
+\item{devel}{If \code{TRUE} the function will look for prebuilt development
+versions on \url{https://nflverse.r-universe.dev/} so it is possible to install
+development versions without GitHub.}
 }
 \value{
-Returns \code{NULL} invisible. Called for side effects.
+Returns \code{NULL} invisibly. Called for side effects.
 }
 \description{
 Check all nflverse packages for available cran updates.
 }
 \examples{
+\donttest{
 try(
 nflverse_update()
 )
+try(
+nflverse_update(devel = TRUE)
+)
+}
 }
