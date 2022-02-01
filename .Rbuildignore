@@ -9,3 +9,4 @@
 ^docs$
 ^pkgdown$
 ^CRAN-SUBMISSION$
+^man/figures/social_preview\.png$
