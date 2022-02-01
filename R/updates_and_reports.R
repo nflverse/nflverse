@@ -107,7 +107,7 @@ nflverse_update <- function(recursive = FALSE,
   cli::cli_alert_info("Start a clean R session then run:")
   pkg_str <- paste0(deparse(behind$package), collapse = "\n")
   if(isTRUE(devel)){
-    cli::cli_text("{.code install.packages({pkg_str}, repos = {devel_repo})}")
+    cli::cli_text("{.code install.packages({pkg_str}, repos = \"{devel_repo}\")}")
   } else {
     cli::cli_text("{.code install.packages({pkg_str})}")
   }
