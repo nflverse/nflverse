@@ -63,6 +63,9 @@ template:
     heading_font: {google: "Kanit"}
     code_font: {google: "Fira Code"}
   opengraph:
+    image:
+      src: man/figures/social_preview.png
+      alt: "nflverse social preview card"
     twitter:
       creator: "@mrcaseb"
       site: "@nflfastR"
