@@ -5,6 +5,10 @@
 
 <!-- badges: start -->
 
+[![CRAN
+status](https://img.shields.io/cran/v/nflverse?style=flat-square&logo=R&label=CRAN)](https://CRAN.R-project.org/package=nflverse)
+[![Dev
+status](https://img.shields.io/github/r-package/v/nflverse/nflverse/main?label=dev%20version&style=flat-square&logo=github)](https://nflverse.nflverse.com/)
 [![R build
 status](https://img.shields.io/github/workflow/status/nflverse/nflverse/R-CMD-check?label=R%20check&style=flat-square&logo=github)](https://github.com/nflverse/nflverse/actions)
 [![nflverse
@@ -20,11 +24,26 @@ install and load core packages from the nflverse in a single command.
 ## Installation
 
 The easiest way to get nflverse is to install it from
+[CRAN](https://cran.r-project.org/package=nflverse) with:
+
+``` r
+install.packages("nflverse")
+```
+
+To get a bug fix or to use a feature from the development version, you
+can install the development version of nflverse either from
 [GitHub](https://github.com/nflverse/nflverse/) with:
 
 ``` r
 if (!require("remotes")) install.packages("remotes")
 remotes::install_github("nflverse/nflverse")
+```
+
+or prebuilt from the [development repo](https://nflverse.r-universe.dev)
+with:
+
+``` r
+install.packages("nflverse", repos = "https://nflverse.r-universe.dev")
 ```
 
 ## Usage
