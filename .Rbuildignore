@@ -1,0 +1,11 @@
+^nflverse\.Rproj$
+^\.Rproj\.user$
+^LICENSE\.md$
+^cran-comments\.md$
+^README\.Rmd$
+^data-raw$
+^\.github$
+^_pkgdown\.yml$
+^docs$
+^pkgdown$
+^CRAN-SUBMISSION$
