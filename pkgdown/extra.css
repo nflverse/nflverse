@@ -10,6 +10,6 @@ for Responsive Web Design - Media Queries
   main + .col-md-3 {
     margin-left: unset;
     padding-left: 5rem;
-    max-width: 75%;
+    width: 75%;
   }
 }
