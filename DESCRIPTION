@@ -1,6 +1,6 @@
 Package: nflverse
 Title: Easily Install and Load the 'nflverse'
-Version: 1.0.0.9000
+Version: 1.0.1
 Authors@R: c(
     person("Sebastian", "Carl", , "mrcaseb@gmail.com", role = c("aut", "cre")),
     person("Ben", "Baldwin", , "bbaldwin206@gmail.com", role = "aut"),

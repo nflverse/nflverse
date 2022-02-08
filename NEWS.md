@@ -1,4 +1,4 @@
-# nflverse (development version)
+# nflverse 1.0.1
 
 * fixed output of `nflverse_update(devel = TRUE)`
 
