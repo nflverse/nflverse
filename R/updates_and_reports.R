@@ -57,7 +57,7 @@ nflverse_update <- function(recursive = FALSE,
   devel_repo <- "https://nflverse.r-universe.dev/"
   if(isTRUE(devel)) repos["devel"] <- devel_repo
   available <- utils::available.packages(repos = repos)
-  packages <- nflverse_packages(include_self = FALSE)
+  packages <- nflverse_packages(include_self = TRUE)
 
   if(isTRUE(recursive)){
     deps <- tools::package_dependencies(packages, db = available) %>%
