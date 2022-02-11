@@ -21,7 +21,7 @@ df <- data.frame(
 
 p <- ggplot(df, aes(x = a, y = b)) +
   geom_from_path(aes(path = url), width = 0.15) +
-  annotate(shadowtext::GeomShadowtext, x = 2, y = 1.5, label = "The nflverse", family = "Kanit", size = 30, color = "#ffffff") +
+  # annotate(shadowtext::GeomShadowtext, x = 2, y = 1.5, label = "The nflverse", family = "Kanit", size = 30, color = "#ffffff") +
   # annotate("text",
   #          x = 2,
   #          y = 1.5,
@@ -37,6 +37,6 @@ p <- ggplot(df, aes(x = a, y = b)) +
 
 # ggpreview(p, width = 1280, height = 640, units = "px", dpi = 600,  bg = "#222222")
 
-ggsave("man/figures/social_preview.png",
+ggsave("social_preview.svg",
        p, width = 1280, height = 640, units = "px", dpi = 1200,
-       bg = "#A0A0A0")
+       bg = "transparent")
