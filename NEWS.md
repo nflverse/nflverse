@@ -1,6 +1,7 @@
 # nflverse (development version)
 
 * `nflverse_update()` includes the nflverse package.
+* improved installation instructions for `nflverse_update(devel = TRUE)`
 
 # nflverse 1.0.1
 
