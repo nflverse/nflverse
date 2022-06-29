@@ -54,8 +54,15 @@ nflverse_sitrep <- nflreadr::nflverse_sitrep
 nflverse_update <- function(recursive = FALSE,
                             repos = getOption("repos"),
                             devel = FALSE){
-  devel_repo <- "https://nflverse.r-universe.dev/"
-  if(isTRUE(devel)) repos["devel"] <- devel_repo
+  opts <- NULL
+  if(isTRUE(devel)){
+    repos["nflverse"] <- "https://nflverse.r-universe.dev/"
+    opts <-
+      'options(repos = c(
+        nflverse = "https://nflverse.r-universe.dev",
+        getOption("repos")
+      ))'
+  }
   available <- utils::available.packages(repos = repos)
   packages <- nflverse_packages(include_self = TRUE)
 
@@ -104,13 +111,12 @@ nflverse_update <- function(recursive = FALSE,
                   " -> ",
                   format(behind$cran), ")"
                   )
-  cli::cli_alert_info("Start a clean R session then run:")
   pkg_str <- paste0(deparse(behind$package), collapse = "\n")
-  if(isTRUE(devel)){
-    cli::cli_text("{.code install.packages({pkg_str}, repos = \"{devel_repo}\")}")
-  } else {
-    cli::cli_text("{.code install.packages({pkg_str})}")
-  }
+  out_string <- paste0("install.packages(", pkg_str, ')')
+
+  cli::cli_rule(left = "{.emph Start a clean R session then run}")
+  cli::cli_code(opts, out_string)
+  cli::cli_rule()
 
   invisible()
 }
