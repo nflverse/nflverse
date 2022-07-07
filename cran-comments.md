@@ -1,6 +1,6 @@
 ## Summary
 
-This is a bugfix for the function call `nflverse_update(devel = TRUE)` that was missing quotes.
+This is a minor release with some minor improvements.
 
 ## R CMD check results
 
