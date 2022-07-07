@@ -7,9 +7,9 @@
 \title{The 'nflverse' - A set of packages dedicated to data of the
 National Football League.}
 \description{
-\if{html}{\figure{logo.png}{options: align='right' alt='logo' width='120'}}
+\if{html}{\figure{logo.png}{options: style='float: right' alt='logo' width='120'}}
 
-The 'nflverse' is a set of packages dedicated to data of the National Football League. This package is designed to make it easy to install and load multiple 'nflverse' packages in a single step. Learn more about the 'nflverse' at <https://nflverse.nflverse.com/>.
+The 'nflverse' is a set of packages dedicated to data of the National Football League. This package is designed to make it easy to install and load multiple 'nflverse' packages in a single step. Learn more about the 'nflverse' at \url{https://nflverse.nflverse.com/}.
 }
 \seealso{
 Useful links:
