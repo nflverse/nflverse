@@ -18,16 +18,17 @@ nflverse_packages <- function(include_self = FALSE) {
   sort(names)
 }
 
-#' @inherit nflreadr::nflverse_sitrep
+#' Get a Situation Report on System, nflverse Package Versions and Dependencies
+#'
+#' @description This function gives a quick overview of the versions of R and
+#'   the operating system as well as the versions of nflverse packages, options,
+#'   and their dependencies. It's primarily designed to help you get a quick
+#'   idea of what's going on when you're helping someone else debug a problem.
+#' @details See [`nflreadr::nflverse_sitrep`] for details.
 #' @export
-#' @returns Returns `NULL` invisibly. Called for side effects.
-#' @examples
-#' \donttest{
-#' try(
-#' nflverse_sitrep()
-#' )
-#' }
-nflverse_sitrep <- nflreadr::nflverse_sitrep
+#' @name nflverse_sitrep
+#' @importFrom nflreadr nflverse_sitrep
+NULL
 
 #' Update nflverse Packages
 #'
