@@ -1,8 +1,8 @@
 pandoc: 2.7.3
-pkgdown: 2.0.2
+pkgdown: 2.0.5
 pkgdown_sha: ~
 articles: {}
-last_built: 2022-02-11T11:11Z
+last_built: 2022-07-07T07:54Z
 urls:
   reference: https://nflverse.nflverse.com/reference
   article: https://nflverse.nflverse.com/articles
