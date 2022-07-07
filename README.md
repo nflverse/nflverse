@@ -35,8 +35,8 @@ can install the development version of nflverse either from
 [GitHub](https://github.com/nflverse/nflverse/) with:
 
 ``` r
-if (!require("remotes")) install.packages("remotes")
-remotes::install_github("nflverse/nflverse")
+if (!require("pak")) install.packages("pak")
+pak::pak("nflverse/nflverse")
 ```
 
 or prebuilt from the [development repo](https://nflverse.r-universe.dev)
@@ -50,8 +50,8 @@ install.packages("nflverse", repos = "https://nflverse.r-universe.dev")
 
 `library(nflverse)` will load the following nflverse packages:
 
--   [nflfastR](https://www.nflfastr.com/), for play-by-play data back
-    to 1999.
+-   [nflfastR](https://www.nflfastr.com/), for play-by-play data back to
+    1999.
 -   [nflseedR](https://nflseedr.com/), for season simulations.
 -   [nfl4th](https://www.nfl4th.com/), for 4th down analysis.
 -   [nflreadr](https://nflreadr.nflverse.com/), for fast end efficient

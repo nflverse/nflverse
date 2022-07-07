@@ -38,8 +38,8 @@ install.packages("nflverse")
 To get a bug fix or to use a feature from the development version, you can install the development version of nflverse either from [GitHub](https://github.com/nflverse/nflverse/) with:
 
 ```{r eval = FALSE}
-if (!require("remotes")) install.packages("remotes")
-remotes::install_github("nflverse/nflverse")
+if (!require("pak")) install.packages("pak")
+pak::pak("nflverse/nflverse")
 ```
 
 or prebuilt from the [development repo](https://nflverse.r-universe.dev) with:
