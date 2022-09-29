@@ -43,7 +43,7 @@ or prebuilt from the [development repo](https://nflverse.r-universe.dev)
 with:
 
 ``` r
-install.packages("nflverse", repos = "https://nflverse.r-universe.dev")
+install.packages("nflverse", repos = c("https://nflverse.r-universe.dev", getOption("repos")))
 ```
 
 ## Usage
