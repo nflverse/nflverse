@@ -28,6 +28,7 @@ Authors:
   \item Ben Baldwin \email{bbaldwin206@gmail.com}
   \item Lee Sharpe
   \item Tan Ho \email{tan@tanho.ca} (\href{https://orcid.org/0000-0001-8388-5155}{ORCID})
+  \item John Edwards \email{edwards1860@gmail.com} (\href{https://orcid.org/0000-0002-8533-7504}{ORCID})
 }
 
 }
