@@ -19,13 +19,13 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 [![CRAN status](https://img.shields.io/cran/v/nflverse?style=flat-square&logo=R&label=CRAN)](https://CRAN.R-project.org/package=nflverse)
 [![Dev status](https://img.shields.io/github/r-package/v/nflverse/nflverse/main?label=dev%20version&style=flat-square&logo=github)](https://nflverse.nflverse.com/)
-[![R build status](https://img.shields.io/github/workflow/status/nflverse/nflverse/R-CMD-check?label=R%20check&style=flat-square&logo=github)](https://github.com/nflverse/nflverse/actions)
+[![R-CMD-check](https://github.com/nflverse/nflverse/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/nflverse/nflverse/actions/workflows/R-CMD-check.yaml)
 [![nflverse support](https://img.shields.io/discord/789805604076126219?color=7289da&label=nflverse%20support&logo=discord&logoColor=fff&style=flat-square)](https://discord.com/invite/5Er2FBnnQa)
 <!-- badges: end -->
 
 ## Overview
 
-The nflverse is a set of packages dedicated to data of the National Football League. The __nflverse__ package is designed to make it easy to install and load core packages from the nflverse in a single command.
+The nflverse is a set of packages dedicated to data of the National Football League. The __nflverse__ package is designed to make it easy to install and load core packages from the nflverse in a single command. Please see the [nflverse organisation repo](https://github.com/nflverse/nflverse-org) on more information about governance, the code of conduct and possible roles. 
 
 ## Installation
 
