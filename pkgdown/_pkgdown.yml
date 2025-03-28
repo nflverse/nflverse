@@ -2,15 +2,15 @@ url: https://nflverse.nflverse.com
 
 authors:
   Sebastian Carl:
-    href: https://twitter.com/mrcaseb
+    href: https://bsky.app/profile/mrcaseb.nflverse.com
   Ben Baldwin:
-    href: https://twitter.com/benbbaldwin
+    href: https://bsky.app/profile/rbsdm.com
   Lee Sharpe:
     href: https://twitter.com/LeeSharpeNFL
   Tan Ho:
-    href: https://twitter.com/_TanHo
+    href: https://tanho.ca
   John Edwards:
-    href: https://twitter.com/John_B_Edwards
+    href: https://johnbedwards.io
 
 home:
   title: nflverse • Data and Tools for NFL Analytics
@@ -22,7 +22,7 @@ navbar:
   bg: dark
   structure:
     left:  [home, intro, reference, news, articles]
-    right: [discord, github, more]
+    right: [search, discord, github, more]
   components:
     discord:
       icon: "fab fa-discord fa-lg"
@@ -58,7 +58,6 @@ navbar:
 template:
   bootstrap: 5
   bootswatch: cosmo
-  # theme: arrow-light
   bslib:
     font_scale: 1.2
     base_font: {google: "IBM Plex Sans"}
