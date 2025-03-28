@@ -25,14 +25,14 @@
 #     right = "nflverse_conflicts()"
 #   )
 #
-#   pkgs <- x %>% purrr::map(~ gsub("^package:", "", .))
-#   others <- pkgs %>% purrr::map(`[`, -1)
+#   pkgs <- x |> purrr::map(~ gsub("^package:", "", .))
+#   others <- pkgs |> purrr::map(`[`, -1)
 #   other_calls <- purrr::map2_chr(
 #     others, names(others),
 #     ~ paste0(crayon::blue(.x), "::", .y, "()", collapse = ", ")
 #   )
 #
-#   winner <- pkgs %>% purrr::map_chr(1)
+#   winner <- pkgs |> purrr::map_chr(1)
 #   funs <- format(paste0(
 #     crayon::blue(winner),
 #     "::",
@@ -55,8 +55,8 @@
 #
 # confirm_conflict <- function(packages, name) {
 #   # Only look at functions
-#   objs <- packages %>%
-#     purrr::map(~ get(name, pos = .)) %>%
+#   objs <- packages |>
+#     purrr::map(~ get(name, pos = .)) |>
 #     purrr::keep(is.function)
 #
 #   if (length(objs) <= 1) {

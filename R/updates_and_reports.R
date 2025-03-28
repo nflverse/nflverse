@@ -68,9 +68,9 @@ nflverse_update <- function(recursive = FALSE,
   packages <- nflverse_packages(include_self = TRUE)
 
   if(isTRUE(recursive)){
-    deps <- tools::package_dependencies(packages, db = available) %>%
-      unlist() %>%
-      unique() %>%
+    deps <- tools::package_dependencies(packages, db = available) |>
+      unlist() |>
+      unique() |>
       sort()
     base_pkgs <- c(
       "base", "compiler", "datasets", "graphics", "grDevices", "grid",
@@ -82,8 +82,8 @@ nflverse_update <- function(recursive = FALSE,
     packages <- sort(c(packages, deps))
   }
 
-  cran_version <- available[packages, "Version"] %>%
-    base::package_version() %>%
+  cran_version <- available[packages, "Version"] |>
+    base::package_version() |>
     as.character()
   local_version <- vapply(packages, packageVersion, character(1L))
   behind <- cran_version > local_version
