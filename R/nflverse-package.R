@@ -5,7 +5,6 @@
 # The following block is used by usethis to automatically manage
 # roxygen namespace tags. Modify with care!
 ## usethis namespace: start
-#' @importFrom magrittr %>%
 #' @importFrom nfl4th load_4th_pbp
 #' @importFrom nflfastR calculate_expected_points
 #' @importFrom nflplotR valid_team_names
