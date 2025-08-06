@@ -1,6 +1,6 @@
 Package: nflverse
 Title: Easily Install and Load the 'nflverse'
-Version: 1.0.3.9000
+Version: 1.0.3.9001
 Authors@R: c(
     person("Sebastian", "Carl", , "mrcaseb@gmail.com", role = c("aut", "cre")),
     person("Ben", "Baldwin", , "bbaldwin206@gmail.com", role = "aut"),
@@ -31,6 +31,7 @@ Imports:
     rlang (>= 0.4.10),
     rstudioapi (>= 0.13)
 Suggests: 
+    pak (>= 0.5.0),
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
 Encoding: UTF-8
