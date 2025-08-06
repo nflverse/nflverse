@@ -92,8 +92,19 @@ development versions without GitHub.</p></dd>
 <span class="r-in"><span><span class="kw"><a href="https://rdrr.io/r/base/try.html" class="external-link">try</a></span><span class="op">(</span></span></span>
 <span class="r-in"><span><span class="fu">nflverse_update</span><span class="op">(</span>devel <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Error in nflverse_update(devel = TRUE) : </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   The package "pak &gt;= 0.5.0" is required to validate your R version.</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> The following packages are out of date:</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> • nfl4th   (1.0.4 -&gt; 1.0.4.9005)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> • nflfastR (5.1.0 -&gt; 5.1.0.9002)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> • nflplotR (1.4.0 -&gt; 1.4.0.9003)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> • nflreadr (1.4.1 -&gt; 1.4.1.9   )</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> • nflseedR (2.0.0 -&gt; 2.0.0.9000)</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ── <span style="font-style: italic;">Start a clean R session then run</span> ────────────────────────────────────────────</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="font-weight: bold;">options</span><span style="color: #D7AF00;">(</span>repos = <span style="font-weight: bold;">c</span><span style="color: #BBBB00;">(</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>         nflverse = <span style="color: #00AFAF;">"https://nflverse.r-universe.dev"</span>,</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>         <span style="font-weight: bold;">getOption</span><span style="color: #0000BB;">(</span><span style="color: #00AFAF;">"repos"</span><span style="color: #0000BB;">)</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>       <span style="color: #BBBB00;">)</span><span style="color: #D7AF00;">)</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="font-weight: bold;">install.packages</span><span style="color: #D7AF00;">(</span><span style="font-weight: bold;">c</span><span style="color: #BBBB00;">(</span><span style="color: #00AFAF;">"nfl4th"</span>, <span style="color: #00AFAF;">"nflfastR"</span>, <span style="color: #00AFAF;">"nflplotR"</span>, <span style="color: #00AFAF;">"nflreadr"</span>, <span style="color: #00AFAF;">"nflseedR"</span><span style="color: #BBBB00;">)</span><span style="color: #D7AF00;">)</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ────────────────────────────────────────────────────────────────────────────────</span>
 <span class="r-in"><span><span class="co"># }</span></span></span>
 </code></pre></div>
     </div>
