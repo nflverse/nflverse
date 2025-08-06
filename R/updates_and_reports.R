@@ -56,7 +56,7 @@ nflverse_update <- function(recursive = FALSE,
                             repos = getOption("repos"),
                             devel = FALSE){
   if (isTRUE(devel)){
-    # devel = TRUE sauggests downloading binaries from r-universe which
+    # devel = TRUE suggests downloading binaries from r-universe which
     # supports only one old-rel R version. We need to checks user's R version
     # to make sure they are able to actually install dev versions.
     # That's done with the pak package.
