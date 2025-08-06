@@ -55,6 +55,16 @@ NULL
 nflverse_update <- function(recursive = FALSE,
                             repos = getOption("repos"),
                             devel = FALSE){
+  if (isTRUE(devel)){
+    # devel = TRUE sauggests downloading binaries from r-universe which
+    # supports only one old-rel R version. We need to checks user's R version
+    # to make sure they are able to actually install dev versions.
+    # That's done with the pak package.
+    rlang::check_installed(
+      "pak >= 0.5.0", "to validate your R version."
+    )
+  }
+
   opts <- NULL
   if(isTRUE(devel)){
     repos["nflverse"] <- "https://nflverse.r-universe.dev/"
@@ -112,8 +122,40 @@ nflverse_update <- function(recursive = FALSE,
                   " -> ",
                   format(behind$cran), ")"
                   )
-  pkg_str <- paste0(deparse(behind$package), collapse = "\n")
-  out_string <- paste0("install.packages(", pkg_str, ')')
+
+  # we run the r version check only if devel = TRUE, so we predifine
+  # too_old = FALSE here
+  too_old <- FALSE
+
+  # check R version and compare to old-rel to make sure we can warn the user
+  # if r-universe hosts no binaries for their R version
+  if (isTRUE(devel)){
+    installed_r_version <- getRversion()
+    ppm_r_versions <- pak::ppm_r_versions()
+    r_oldrel <- ppm_r_versions$r_version[[2]] |> as.package_version()
+    too_old <- (installed_r_version < r_oldrel) && isTRUE(devel)
+  }
+
+  if (too_old) {
+    cli::cli_alert_warning(
+      "Your current R version {.val {installed_r_version}} is older than the \\
+      oldest supported R version {.val {r_oldrel}} in our development repo. \\
+      Please consider updating R. You can still install the packages from \\
+      GitHub using the following approach.",
+      wrap = TRUE
+    )
+  }
+
+  # if too_old = TRUE, we can't provide binaries through r-universe. Instead,
+  # we suggest installing from GitHub with pak
+  if (too_old){
+    opts <- NULL
+    pkg_str <- paste0(deparse(paste0("nflverse/", behind$package)), collapse = "\n")
+    out_string <- paste0("pak::pkg_install(", pkg_str, ')')
+  } else {
+    pkg_str <- paste0(deparse(behind$package), collapse = "\n")
+    out_string <- paste0("install.packages(", pkg_str, ')')
+  }
 
   cli::cli_rule(left = "{.emph Start a clean R session then run}")
   cli::cli_code(opts, out_string)
