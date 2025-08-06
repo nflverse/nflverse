@@ -61,7 +61,7 @@ nflverse_update <- function(recursive = FALSE,
     # to make sure they are able to actually install dev versions.
     # That's done with the pak package.
     rlang::check_installed(
-      "pak >= 0.5.0", "to validate your R version."
+      "pak (>= 0.5.0)", "to validate your R version."
     )
   }
 
